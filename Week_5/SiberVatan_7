@@ -1,0 +1,191 @@
+'''
+def selamdünya():
+    print("HelloWorld")
+    
+selamdünya()    
+'''
+'''
+from os import name
+
+def hoşgeldin(name):
+    name=print("Hoşgeldin "+input("ismini gir gardaş:"))
+hoşgeldin(name)
+#name=input("ismini gir gardaş:")
+
+'''
+'''
+def selamVer(isim):
+    print("hoşgeldin "+isim)
+    
+selamVer(input("ismini gir gardaş:"))
+'''
+'''
+def f():
+    x=int(input("sayı gir"))    
+    y=x+5 
+    print(y) 
+    
+f()      
+'''
+'''
+def fonksiyon(sehir="Bolu"):
+    print("en sevdiğim şehir "+sehir)
+fonksiyon("İstanbul") 
+fonksiyon()  
+'''
+'''
+def sayi(x):
+    x=x+5
+    return x
+sonuc=sayi(10) #sonuc=sayi(int(input("sayı gir")))
+print(sonuc)
+'''
+'''
+def func(x,y):
+    top=x+y
+    return top
+sonuc=func(10,4)
+print(sonuc)
+'''
+'''
+def fonk_tuple(*argv):
+    for arg in argv:
+        print(arg)
+fonk_tuple("selam","naber","nasılsın","iyidir")
+'''
+'''
+sayi=int(input("sayı gir"))
+list=[]
+list1=[]
+def func(sayi):
+    for sayi in range(sayi+1):
+        if sayi%2==0:
+            list.append(sayi)
+        elif sayi%2==1:
+            list1.append(sayi)               
+    print("Çift Sayılar:",list,"\nTek Sayılar:", list1)
+func(sayi)            
+'''
+from time import sleep
+print("----------HESAP MAKİNESİNE HOŞGELDİNİZ----------")
+def toplam(num1,num2):
+        
+        return num1+num2
+def çıkarma(num1,num2):
+        return num1-num2
+def çarpma(num1,num2):
+        return num1*num2
+def bölme(num1,num2):
+        return num1//num2
+demaettimi=True
+while demaettimi:
+    
+    secim=int(input("Hangi seçimi yapmak istersin;\nToplama(1)\nÇıkarma(2\nÇarpma(3\nBölme(4)\nFaktöriyel(5)\nÇıkış(6)\n"))
+    if secim==6:
+        demaettimi=False
+        sleep(1)
+        print("Loading.")
+        sleep(1)
+        print("Loading..")
+        sleep(1)
+        print("Loading...")
+        sleep(1)
+        print("Loading....")
+        sleep(1)
+        print("Çıkış Yapıldı")
+    elif secim==5:
+        
+        sayac=1
+        adet=int(input("Faktöryelini bulmak istediğin sayıyı yaz"))
+        while sayac ==adet:
+            sayi=sayi*adet
+            sayac+=1
+            print("girilen sayılar:",sayi) 
+        
+        
+            
+            
+        
+        
+        
+    else:
+            
+        num1=int(input("Birinci Sayıyı Giriniz"))
+        num2=int(input("İkinci Sayıyı Giriniz"))  
+        if secim==1:
+            sleep(1)
+            print("Loading.")
+            sleep(1)
+            print("Loading..")
+            sleep(1)
+            print("Loading...")
+            sleep(1)
+            print("Loading....")
+            sleep(1)
+            sonuc=toplam(num1,num2)#print(num1+num2)
+        elif secim==2:
+            sleep(1)
+            print("Loading.")
+            sleep(1)
+            print("Loading..")
+            sleep(1)
+            print("Loading...")
+            sleep(1)
+            print("Loading....")
+            sleep(1)
+            sonuc=çıkarma(num1,num2)#print(num1-num2)  
+        elif secim==3:
+            sleep(1)
+            print("Loading.")
+            sleep(1)
+            print("Loading..")
+            sleep(1)
+            print("Loading...")
+            sleep(1)
+            print("Loading....")
+            sleep(1)
+            sonuc=çarpma(num1,num2)#print(num1*num2)
+        elif secim==4:
+            if num2==0:
+                print("payda sıfır olamaz")
+            else:    
+                sleep(1)
+                print("Loading.")
+                sleep(1)
+                print("Loading..")
+                sleep(1)
+                print("Loading...")
+                sleep(1)
+                print("Loading....")
+                sleep(1)
+                sonuc=bölme(num1,num2)#print(num1/num2)             
+        else:
+            print("Adam gibi seçeneklerden birini tuşla.")               
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
